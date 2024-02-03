@@ -23,7 +23,7 @@ hr{
     padding-bottom: 2px;
 }
 
-#content{
+.content{
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
