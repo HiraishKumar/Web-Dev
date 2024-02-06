@@ -1,41 +1,48 @@
 html{
     background: #000000;
 }
+
+span{
+    color: aliceblue;
+}
+
 a.active{
     color: rgb(255, 255, 255);
 }
+
 a{
     color: rgb(220, 51, 51);
 }
-hr{
-    max-width: 1300px;
-}
+
 .site_header{
     text-align: center;
     padding-bottom: 5;
     margin-bottom: 1;
 }
+
 h1{
     color: aliceblue;
 }
+
 h2{
     color: aliceblue;
 }
+
 p{
     color: aliceblue;
     font-size: 21px;
 }
+
 hr{
     border-color:black;
     padding-bottom: 2px;
+    max-width: 1300px;
 }
 
 #contents_list{
     border: 2px solid white;
     padding-right: -1000px;
     max-width: 500px;
-    
-    /* color(srgb(red240, 248, 255)); */
 }
 
 .content{
@@ -73,8 +80,7 @@ hr{
     margin-left: auto;
     margin-right: auto;
 }
-/* .smaller_image{
-    scale: 0.6;
-    width: 100px;
-    height: auto;
-} */
+
+.by-line{
+    font-size: 0.75rem;
+}
