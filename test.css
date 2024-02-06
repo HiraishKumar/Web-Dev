@@ -2,6 +2,10 @@ html{
     background: #000000;
 }
 
+time{
+    color: aliceblue;
+}
+
 span{
     color: aliceblue;
 }
