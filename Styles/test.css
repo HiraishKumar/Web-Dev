@@ -66,6 +66,14 @@ hr{
     justify-content: center;
 }
 
+.left_container{
+    float: inline-start;
+}
+
+.right_container{
+    float:inline-end;
+}
+
 .container_text{
     flex-grow: 2;
     flex-shrink: 2;
