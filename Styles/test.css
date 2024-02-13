@@ -67,11 +67,24 @@ hr{
 }
 
 .left_container{
-    float: inline-start;
+    /* background-color: aqua; */
+    float: left;
+    width: 25%;
+}
+
+.middle_container{
+    /* background-color: aqua; */
+    width: 44%;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    padding-left: 3%;
 }
 
 .right_container{
-    float:inline-end;
+    /* background-color: aqua; */
+    float: right;
+    width: 25%;
 }
 
 .container_text{
