@@ -58,6 +58,13 @@ hr{
     width: 95%;
 }
 
+.logo_head_image{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .article_head{
     display: block;
     text-align:start;
