@@ -159,3 +159,7 @@ hr{
 .by-line{
     font-size: 0.75rem;
 }
+
+.list_item{
+    padding-left: 5%;
+}
