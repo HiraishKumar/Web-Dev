@@ -1,0 +1,52 @@
+html
+{
+    background-color: black;
+    color: aliceblue;
+}
+
+a
+{
+    color: red;
+}
+
+p
+{
+    color: aliceblue;
+    font-size: 18px;
+}
+
+hr
+{
+    color: aliceblue;
+    max-width: 1300px;
+    display: block;
+    
+}
+
+header
+{
+    display: block;
+}
+
+.left_container
+{
+    width: 40%;
+    float: left;
+}
+
+.right_container
+{
+    width: 40%;
+    float: right;
+}
+.content
+{
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#_header
+{
+    text-align: center;
+}
