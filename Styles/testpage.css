@@ -22,23 +22,24 @@ header{
 
 .container{
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin:0px auto 0px auto;
 }
 
 .box{
     background-color: pink;
     margin-left: 1%;
     margin-right: 1%;
-    max-width: 75%  ;
+    width: 300px  ;
+    min-height: 300px;
     text-align: center;
     padding-left: 2%;
     padding-right: 2%;
 }
 
 .box_border{
+    border-style: solid;
     border-color: black;
     border-radius: 20px;
     border-bottom: 20px;
