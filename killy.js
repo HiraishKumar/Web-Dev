@@ -1,14 +1,41 @@
-// server.mjs
-import { createServer } from 'node:http';
+const http = require('http');
+const fs = require('fs'); 
+const hostname = '127.0.0.1';
+const port = 3006;
 
-const server = createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello World!\n');
+const server = http.createServer((req,res)=>{
+	const filepath = 'testpage.html'
+	fs.readFileSync(filepath,(err,data)=>{
+		if (err){
+			res.statusCode = 500; // Internal Server Error
+			res.setHeader('Content-Type', 'text/plain');
+			res.end('Error reading the HTML file');
+		}
+		else{
+			res.statusCode=200;
+			res.setHeader('conten-type','text/html');
+			res.end(data);
+		}
+	})
+
 });
 
-// starts a simple http server locally on port 3000
-server.listen(3000, '127.0.0.1', () => {
-  console.log('Listening on 127.0.0.1:3000');
+server.listen(port,hostname,()=>{
+	console.log(`Server Runing at http://${hostname}:${port}/`)
 });
 
-// run with `node server.mjs`
+
+// const http = require('http');
+
+// const hostname = '127.0.0.1';
+// const port = 3000;
+
+// const server = http.createServer((req, res) => {
+//   res.statusCode = 200;
+//   res.setHeader('Content-Type', 'text/plain');
+//   res.end('Hello World');
+// });
+
+// server.listen(port, hostname, () => {
+//   console.log(`Server running at http://${hostname}:${port}/`);
+// });
